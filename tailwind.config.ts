@@ -25,6 +25,16 @@ const config: Config = {
         sans: "var(--font-sans)",
         serif: "var(--font-serif)",
       },
+
+      transitionProperty: {
+        background: "background-color",
+      },
+
+      colors: {
+        primary: "var(--color-primary)",
+        background: "var(--color-background)",
+        text: "var(--color-text)",
+      },
     },
   },
   plugins: [],

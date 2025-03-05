@@ -1,4 +1,5 @@
 import ThemeSwitcher from "@/components/ThemeSwitcher";
+import { ContactSection } from "@/sections/Contact";
 import { Header } from "@/sections/Header";
 import { HeroSection } from "@/sections/Hero";
 import { ProjectsSection } from "@/sections/Projects";
@@ -11,6 +12,7 @@ export default function Home() {
       <HeroSection />
       <ProjectsSection />
       <TapeSection />
+      <ContactSection />
     </>
   );
 }

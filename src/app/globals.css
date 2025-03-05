@@ -6,7 +6,7 @@
   --color-primary: #007bff;
   --color-background: hsl(221, 39%, 11%);
   --color-text: #fff;
-  transition: background-color 0.5s ease, color 0.5s ease;
+  transition: all 0.5s ease, color 0.5s ease;
 }
 
 .dark {

@@ -35,7 +35,9 @@ export const ContactSection = () => {
           bg-white text-gray-950  dark:bg-[#333333] dark:text-[#e0e0e0] px-6 py-3 rounded-xl font-semibold gap-2 cursor-pointer w-max
           "
               >
-                <span className="font-semibold">Contact Me</span>
+                <span className="font-semibold">
+                  <a href="mailto:tanvihassanrifat50@gmail.com">Contact Me </a>
+                </span>
                 <ArrowUpRightIcon className="size-4" />
               </button>
             </div>

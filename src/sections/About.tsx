@@ -1,3 +1,7 @@
 export const AboutSection = () => {
-  return <div>About Section</div>;
+  return <div className="pb-96">
+    <SectionHeader>
+      
+    </SectionHeader>
+  </div>;
 };

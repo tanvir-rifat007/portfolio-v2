@@ -1,6 +1,8 @@
-import darkSaasLandingPage from "@/assets/images/dark-saas-landing-page.png";
-import lightSaasLandingPage from "@/assets/images/light-saas-landing-page.png";
-import aiStartupLandingPage from "@/assets/images/ai-startup-landing-page.png";
+import JournalPng from "@/assets/images/journal.png";
+import DatingPng from "@/assets/images/dating.png";
+import MoodyPlayerPng from "@/assets/images/moodyPlayer.png";
+import Soroborno from "@/assets/images/sororborno.png";
+import Syshealth from "@/assets/images/syshealth.png";
 import Image from "next/image";
 
 import CheckCircleIcon from "@/assets/icons/check-circle.svg";
@@ -9,40 +11,67 @@ import grainImage from "@/assets/images/grain.jpg";
 
 const portfolioProjects = [
   {
-    company: "Acme Corp",
-    year: "2022",
-    title: "Dark Saas Landing Page",
-    results: [
-      { title: "Enhanced user experience by 40%" },
-      { title: "Improved site speed by 50%" },
-      { title: "Increased mobile traffic by 35%" },
-    ],
-    link: "https://youtu.be/4k7IdSLxh6w",
-    image: darkSaasLandingPage,
+    title: "Journal Mood AI",
+    description:
+      "Journal Mood AI is an AI-powered journaling app built with Next.js, Clerk, and Docker. It helps users track their mood, analyze sentiments, and get personalized insights through AI-generated responses, music recommendations, visualizations, and image generation.",
+    results: [{ title: "Nextjs" }, { title: "Clerk" }, { title: "AI" }],
+    link: "https://journal-mood-ai-nextjs-cm9q.vercel.app/",
+    image: JournalPng,
+    live: true,
   },
   {
-    company: "Innovative Co",
-    year: "2021",
-    title: "Light Saas Landing Page",
+    title: "Nudity Checker Fullstack Dating App",
+    description:
+      "Built a full-featured dating application with real-time matching and automated nudity detection. Implemented using Next.js and containerize with Docker.",
+
     results: [
-      { title: "Boosted sales by 20%" },
-      { title: "Expanded customer reach by 35%" },
-      { title: "Increased brand awareness by 15%" },
+      { title: "Nextjs" },
+      { title: "Machine Learning" },
+      { title: "Tensorflow.js" },
     ],
-    link: "https://youtu.be/7hi5zwO75yc",
-    image: lightSaasLandingPage,
+    link: "https://fullstack-dating-app-nextjs.vercel.app",
+    image: DatingPng,
+    live: true,
   },
   {
-    company: "Quantum Dynamics",
-    year: "2023",
-    title: "AI Startup Landing Page",
+    title: "MoodyPlayer AI Music Player",
+    description:
+      "Developed a mood-based music player using TensorFlow.js to detect emotions and suggest songs, with a JavaScript and CSS interface and Service Worker for offline capability",
+
     results: [
-      { title: "Enhanced user experience by 40%" },
-      { title: "Improved site speed by 50%" },
-      { title: "Increased mobile traffic by 35%" },
+      { title: "Live Tranining Model" },
+      { title: "Tensorflow.js" },
+      { title: "HTML,CSS" },
     ],
-    link: "https://youtu.be/Z7I5uSRHMHg",
-    image: aiStartupLandingPage,
+    link: "https://moodyplayer.netlify.app/",
+    image: MoodyPlayerPng,
+    live: true,
+  },
+
+  {
+    title: "Soroborno Likhi",
+    description:
+      "Developed a machine learning model to detect soroborno and print it to the canvas using TensorFlow.js.",
+
+    results: [
+      { title: "Live Tranining Model" },
+      { title: "Tensorflow.js" },
+      { title: "HTML,CSS" },
+    ],
+    link: "https://tanvir-rifat007.github.io/soroborno-likhi",
+    image: Soroborno,
+    live: true,
+  },
+
+  {
+    title: "Syshealth Checker for Macbook",
+    description:
+      "Created a systemhealth checker for Macbook using Golang. It checks the system health and provides a notification to the user.",
+
+    results: [{ title: "Golang" }, { title: "Os" }, { title: "Notification" }],
+    link: "https://tanvir-rifat007.github.io/soroborno-likhi",
+    image: Syshealth,
+    live: false,
   },
 ];
 
@@ -85,13 +114,18 @@ export const ProjectsSection = () => {
 
                 <div className="lg:grid lg:grid-cols-2 lg:gap-16">
                   <div className="lg:pb-16">
-                    <div className="bg-gradient-to-r from-emerald-300 to-sky-400 inline-flex gap-2 font-bold uppercase tracking-widest text-sm text-transparent bg-clip-text">
-                      <span>{project.company}</span>
-                      <span>{project.year}</span>
-                    </div>
                     <h3 className="font-serif text-2xl mt-2 md:text-4xl md:mt-5">
                       {project.title}
                     </h3>
+                    <hr className="border-t-2 border-white/5 mt-4 md:mt-5" />
+
+                    <div
+                      className="bg-gradient-to-r from-emerald-300 to-sky-400 inline-flex gap-2 font-bold  tracking-widest text-sm text-transparent bg-clip-text my-4
+                      md:text-lg
+                    "
+                    >
+                      <span>{project.description}</span>
+                    </div>
                     <hr className="border-t-2 border-white/5 mt-4 md:mt-5" />
                     <ul className="flex flex-col gap-4 mt-4 md:mt-5">
                       {project.results.map((result) => (
@@ -104,12 +138,14 @@ export const ProjectsSection = () => {
                         </li>
                       ))}
                     </ul>
-                    <a href={project.link}>
-                      <button className="cursor-pointer h-12 w-full rounded-xl font-semibold inline-flex items-center justify-center gap-2 bg-white text-gray-950 mt-8 dark:bg-[#333333] dark:text-[#e0e0e0] md:w-auto px-6">
-                        <ArrowUpRightIcon className="size-5" />
-                        <span> Visit Live Site</span>
-                      </button>
-                    </a>
+                    {project.live && (
+                      <a href={project.link}>
+                        <button className="cursor-pointer h-12 w-full rounded-xl font-semibold inline-flex items-center justify-center gap-2 bg-white text-gray-950 mt-8 dark:bg-[#333333] dark:text-[#e0e0e0] md:w-auto px-6">
+                          <ArrowUpRightIcon className="size-5" />
+                          <span> Visit Live Site</span>
+                        </button>
+                      </a>
+                    )}
                   </div>
 
                   <div className="relative">

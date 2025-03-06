@@ -151,7 +151,9 @@ export const HeroSection = () => {
 
           <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4">
             <button className="inline-flex items-center gap-2 border border-white/15 px-6 h-12 rounded-xl  z-10">
-              <span className="font-semibold">Explore my work</span>
+              <span className="font-semibold">
+                <a href="#projects">Explore My Work</a>
+              </span>
               <ArrowDown className="size-4" />
             </button>
             <button className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 h-12 px-6 rounded-xl z-10">

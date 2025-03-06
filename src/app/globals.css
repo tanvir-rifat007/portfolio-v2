@@ -19,9 +19,9 @@
 .bg-background {
   background-color: var(--color-background);
 }
-.bg-primary {
+/* .bg-primary {
   background-color: var(--color-text);
-}
+} */
 
 .text-text {
   color: var(--color-text);

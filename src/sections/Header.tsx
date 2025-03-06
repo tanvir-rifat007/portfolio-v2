@@ -5,10 +5,10 @@ export const Header = () => {
     <div className="flex items-center justify-center fixed top-3 w-full z-10 ">
       <ThemeSwitcher />
       <nav className="flex gap-1 p-0.5 border border-white/15 rounded-full bg-white/10 backdrop-blur ">
-        <a href="#" className="nav-item text-text">
+        <a href="" className="nav-item text-text">
           Home
         </a>
-        <a href="#" className="nav-item text-text">
+        <a href="#projects" className="nav-item text-text">
           Projects
         </a>
 
@@ -17,7 +17,7 @@ export const Header = () => {
         </a>
 
         <a
-          href="#"
+          href="#contact"
           className="nav-item bg-white text-gray-900 hover:bg-white/70 hover:text-gray-900 "
         >
           Contact

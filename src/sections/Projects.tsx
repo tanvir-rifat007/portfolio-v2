@@ -48,7 +48,7 @@ const portfolioProjects = [
 
 export const ProjectsSection = () => {
   return (
-    <section className="pb-16 lg:py-24">
+    <section className="pb-16 lg:py-24" id="projects">
       <div className="container">
         <div className="flex justify-center">
           <p className="uppercase font-semibold tracking-widest bg-gradient-to-r from-emerald-300 to-sky-400 text-transparent bg-clip-text">
@@ -65,13 +65,16 @@ export const ProjectsSection = () => {
           see the projects in action.
         </p>
         <div className="flex flex-col gap-20 mt-10 md:mt-20">
-          {portfolioProjects.map((project) => {
+          {portfolioProjects.map((project, i) => {
             return (
               <div
                 key={project.title}
                 className="bg-gray-800 dark:bg-[#242424] rounded-3xl relative after:content-[''] after:absolute after:inset-0  z-0 after:z-10 overflow-hidden after:outline after:outline-2 after:-outline-offset-2 after:rounded-3xl after:outline-white/20 px-8 pt-8 after:pointer-events-none md:pt-12 md:px-10
-                 lg:pt-16 lg:px-20
+                 lg:pt-16 lg:px-20 sticky top-0
                 "
+                style={{
+                  top: `calc(64px + ${i * 40}px)`,
+                }}
               >
                 <div
                   className="inset-0 absolute -z-10 opacity-5"

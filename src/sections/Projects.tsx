@@ -3,6 +3,7 @@ import DatingPng from "@/assets/images/dating.png";
 import MoodyPlayerPng from "@/assets/images/moodyPlayer.png";
 import Soroborno from "@/assets/images/sororborno.png";
 import Syshealth from "@/assets/images/syshealth.png";
+import CodeClips from "@/assets/images/codeclips.png";
 import Image from "next/image";
 
 import CheckCircleIcon from "@/assets/icons/check-circle.svg";
@@ -60,6 +61,17 @@ const portfolioProjects = [
     ],
     link: "https://tanvir-rifat007.github.io/soroborno-likhi",
     image: Soroborno,
+    live: true,
+  },
+
+  {
+    title: "CodeClips PWA",
+    description:
+      "Developed a Go-based code snippet management tool with a Progressive Web App (PWA) interface. Used Go for backend API, HTML templates for UI and Service Worker for offline capability.",
+
+    results: [{ title: "Golang" }, { title: "PWA" }, { title: "SW" }],
+    link: "https://codeclips-go-app-vo5b.onrender.com",
+    image: CodeClips,
     live: true,
   },
 

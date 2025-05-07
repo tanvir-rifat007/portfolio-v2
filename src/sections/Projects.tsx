@@ -30,7 +30,7 @@ const portfolioProjects = [
       { title: "Vanilla Js" },
       { title: "Webauthn" },
     ],
-    link: "https://gym-buddy-production-14b1.up.railway.app/",
+    link: "https://gym-trackr-production.up.railway.app/",
     image: GymTrackr,
     live: true,
   },

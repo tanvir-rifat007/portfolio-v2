@@ -2,8 +2,8 @@ import JournalPng from "@/assets/images/journal.png";
 import DatingPng from "@/assets/images/dating.png";
 import MoodyPlayerPng from "@/assets/images/moodyPlayer.png";
 import Soroborno from "@/assets/images/sororborno.png";
-import Syshealth from "@/assets/images/syshealth.png";
 import GymTrackr from "@/assets/images/gymtrackr.png";
+import Cloud from "@/assets/images/cloud.png";
 import Image from "next/image";
 
 import CheckCircleIcon from "@/assets/icons/check-circle.svg";
@@ -79,14 +79,14 @@ const portfolioProjects = [
   },
 
   {
-    title: "Syshealth Checker for Macbook",
+    title: "Newsletter Web App",
     description:
-      "Created a systemhealth checker for Macbook using Golang. It checks the system health and provides a notification to the user.",
+      "A full-stack newsletter management system built from the ground up with simplicity, performance, and scalability in mind — featuring a Go backend, Vanilla JS frontend (Web Components), Dockerized deployment, AWS Lightsail hosting, PostgreSQL (managed), S3 for file uploads (MinIO in dev), SQS for messaging (ElasticMQ in dev), and full observability with Prometheus and Grafana.",
 
-    results: [{ title: "Golang" }, { title: "Os" }, { title: "Notification" }],
-    link: "https://tanvir-rifat007.github.io/soroborno-likhi",
-    image: Syshealth,
-    live: false,
+    results: [{ title: "Golang" }, { title: "Cloud" }, { title: "AWS" }],
+    link: "https://github.com/tanvir-rifat007/cloud-native-golang",
+    image: Cloud,
+    live: true,
   },
 ];
 

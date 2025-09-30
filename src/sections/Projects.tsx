@@ -9,8 +9,18 @@ import Image from "next/image";
 import CheckCircleIcon from "@/assets/icons/check-circle.svg";
 import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg";
 import grainImage from "@/assets/images/grain.jpg";
+import codeMaker from "@/assets/images/codemaker.png";
 
 const portfolioProjects = [
+  {
+    title: "Journal Mood AI",
+    description:
+      "A blazing-fast SaaS platform built with React ⚛️ and Go 🐹. It features two specialized agents: one that integrates with OpenAI 🧠 to generate code from prompts 💻, and another that manages server operations 🖥️ like health checks ✅ and authentication 🔑. Designed for scalability ☁️ and future-ready enhancements such as monitoring, RBAC, and third-party integrations 🔌",
+    results: [{ title: "React" }, { title: "Go" }, { title: "AI & MCP" }],
+    link: "https://codegen-ai-production.up.railway.app/",
+    image: codeMaker,
+    live: true,
+  },
   {
     title: "Journal Mood AI",
     description:

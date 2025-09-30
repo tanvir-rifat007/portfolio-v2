@@ -15,7 +15,7 @@ const portfolioProjects = [
   {
     title: "Journal Mood AI",
     description:
-      "A blazing-fast SaaS platform built with React ⚛️ and Go 🐹. It features two specialized agents: one that integrates with OpenAI 🧠 to generate code from prompts 💻, and another that manages server operations 🖥️ like health checks ✅ and authentication 🔑. Designed for scalability ☁️ and future-ready enhancements such as monitoring, RBAC, and third-party integrations 🔌",
+      "A blazing-fast SaaS platform built with React and Go. It features two specialized agents: one integrates with OpenAI to generate code from prompts, and another manages server operations such as health checks and authentication. Designed for scalability and future-ready enhancements, including monitoring, role-based access control, and third-party integrations",
     results: [{ title: "React" }, { title: "Go" }, { title: "AI & MCP" }],
     link: "https://codegen-ai-production.up.railway.app/",
     image: codeMaker,

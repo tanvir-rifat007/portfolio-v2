@@ -13,7 +13,7 @@ import codeMaker from "@/assets/images/codemaker.png";
 
 const portfolioProjects = [
   {
-    title: "Journal Mood AI",
+    title: "CodenGen AI Agent",
     description:
       "A blazing-fast SaaS platform built with React and Go. It features two specialized agents: one integrates with OpenAI to generate code from prompts, and another manages server operations such as health checks and authentication. Designed for scalability and future-ready enhancements, including monitoring, role-based access control, and third-party integrations",
     results: [{ title: "React" }, { title: "Go" }, { title: "AI & MCP" }],
